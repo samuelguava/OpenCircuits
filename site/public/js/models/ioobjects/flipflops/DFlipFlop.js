@@ -13,16 +13,18 @@ class DFlipFlop extends Gate {
     }
     activate(x) {
         var on = this.outputs[1].isOn;
-
         var set = this.inputs[1].isOn;
         var clock = this.inputs[0].isOn;
 
-        if (clock) {
+        if (clock && uptick) {
             if (set) {
                 on = true;
             } else {
-            	on = false;
+            	  on = false;
             }
+            uptick = false;
+        } else {
+        		uptick = true;
         }
 
         super.activate(on, 1);
