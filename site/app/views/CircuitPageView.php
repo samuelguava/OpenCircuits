@@ -105,7 +105,7 @@ HTML;
                             }
 
                             $return .= <<<HTML
-                            <img src="img/icons/{$dir}/{$imageName}" ondragend="PlaceItemController.onDragEnd(event);" alt="{$displayName}" />
+                            <img id="item-{$jsName}" src="img/icons/{$dir}/{$imageName}" ondragend="PlaceItemController.onDragEnd(event);" alt="{$displayName}" />
                             <br/>{$displayName}
                         </button>
 HTML;
