@@ -122,8 +122,15 @@ var Tour = (function() {
                     element: '#item-DLatch',
                     popover: {
                         title: 'D Latch',
-                        description: 'The D Latch operates similarly to the Gated SR Latch, except the S and R inputs have been connected to a single D input with a NOT Gate so that the two parts of the D input will always have opposite values.',
+                        description: 'The D Latch operates similarly to the Gated SR Latch, except the S and R inputs have been connected to a single D input with a NOT Gate so that the S and R inputs will always be opposite.',
                         position: 'right'
+                    }
+                },
+                {
+                    element: '#item-SRFlipFlop',
+                    popover: {
+                        title: ' SR Flip Flop',
+                        description: ''
                     }
                 }
             ]
