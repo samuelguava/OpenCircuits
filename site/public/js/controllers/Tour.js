@@ -9,7 +9,7 @@ var Tour = (function() {
                 {
                     element: '#items',
                     popover: {
-                        title: 'File Input Button',
+                        title: 'Item Menu',
                         description: 'This side bar is where you can find all the components. Simply click and drag an element into the canvas.',
                         position: 'right'
                     }
@@ -86,6 +86,46 @@ var Tour = (function() {
                         position: 'right'
                     }
                 },
+                {
+                    element: '#item-ANDGate',
+                    popover: {
+                        title: 'AND/NAND Gate',
+                        description: 'The AND Gate provides power to the circuit only when both inputs are on. The NAND Gate functions as the opposite of an AND Gate: power is NOT provided only when both inputs are off.',
+                        position: 'right'
+                    }
+                },
+                {
+                    element: '#item-ORGate',
+                    popover: {
+                        title: 'OR/NOR Gate',
+                        description: 'The OR Gate provides power to the circuit when one or both inputs are on. The NOR Gate acts as the opposite of the OR Gate and provides power to the circuit when none of the inputs are on.',
+                        position: 'right'
+                    }
+                },
+                {
+                    element: '#item-XORGate',
+                    popover: {
+                        title: 'XOR/XNOR Gate',
+                        description: 'The XOR Gate provides power to the circuit when only one input is on. The XNOR Gate acts as the opposite to the XOR Gate and provides power only when both or neither inputs are on.',
+                        position: 'right'
+                    }
+                },
+                {
+                    element: '#item-SRLatch',
+                    popover: {
+                        title: 'Gated SR Latch',
+                        description: 'The Gated SR Latch has three inputs, S, R, and >. The S and R inputs are normal inputs, but the > input acts as a reset that enables the S and R inputs to produce the outputs Q and Q\'.',
+                        position: 'right'
+                    }
+                },
+                {
+                    element: '#item-DLatch',
+                    popover: {
+                        title: 'D Latch',
+                        description: 'The D Latch operates similarly to the Gated SR Latch, except the S and R inputs have been connected to a single D input with a NOT Gate so that the two parts of the D input will always have opposite values.',
+                        position: 'right'
+                    }
+                }
             ]
             
             var driver = new Driver({ animate: true })
